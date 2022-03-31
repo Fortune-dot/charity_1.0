@@ -1,0 +1,223 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+ 
+
+  
+}
+.container {
+  background-image: url(./images/semi2.png);
+  opacity: 1 !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 534px !important;
+  /*border: 1px solid black;*/
+  border: none;
+}
+.nav {
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.section1 {
+  width: 90%;
+}
+
+.section2 {
+  width: 10%;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo-image {
+  scale: 0.5;
+}
+.tagline {
+  font-style: bold;
+  text-decoration-style: bold;
+  font-size: 13px;
+  /*font-weight: bold;*/
+}
+.landing {
+  font-weight: bold;
+  text-align: center;
+  font-size: 13.8px;
+  display: flex;
+  justify-content: center;
+}
+.ceo-card {
+  border-radius: 30px !important;
+}
+.ceo-image {
+  border-radius: 20px 0px 0px 20px !important;
+}
+
+.cocoon {
+  width: 300px;
+}
+.outerdiv {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.innerdiv {
+  width: 80%;
+  height: 40px;
+  /*border: 1px solid black;*/
+  padding: 5px;
+}
+.youtube-button {
+  width: 70px;
+  height: 34px;
+  margin: 3.6px;
+  font-size: 9px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.screen-button {
+  width: 83px;
+  height: 34px;
+  margin: 3.6px;
+  font-size: 9px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.mail {
+  width: 83px;
+  height: 34px;
+  margin: 3.6px;
+  font-size: 9px;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.banner {
+  height: 118px;
+  width: 100%;
+  background-color: purple;
+  border-radius: 20px;
+}
+.emoji-card {
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  background-color: #c486eb;
+  text-align: center;
+}
+.inner-text {
+  width: 100%;
+}
+
+#container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  border-radius: 20px;
+  z-index: 1;
+}
+
+#background {
+  position: absolute;
+  background-color: #c486eb !important;
+  border-radius: 20px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.emoji {
+  font-size: 80px;
+}
+.empty-soul {
+  height: 300px;
+  width: 100%;
+}
+li.list-group-item {
+  border: none !important;
+}
+.navigation {
+  padding: 10px;
+  height: 40px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.one-part {
+  width: 10%;
+}
+
+.second-part {
+  width: 80%;
+}
+
+.third-part {
+  width: 10%;
+}
+.custom-card {
+  border-radius: 20px !important;
+  background-color: #c486eb !important;
+  font-size: 90px !important;
+}
+.banner-two {
+  height: 318px;
+  width: 100%;
+  background-color: purple;
+  border-radius: 20px;
+}
+.event1{
+  background-image:url(./images/one.jpeg);
+  background-size: cover;
+}
+.event2{
+  background-image: url(./images/three.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+.donate-banner{
+  background-image: url(./images/royal.png);
+  background-size: contain;
+}
+
+.first-banner{
+   background-image: url(./images/donate.png);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
+.home-banner{
+  background-image: url(./images/small-banner.png);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+.dope-banner{
+  background-image: url(./images/cool_banner.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.meet{
+  background-image: url(./images/meet.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.patches{
+  background-image: url(./images/patch.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
