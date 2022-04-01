@@ -1,3 +1,41 @@
+                               <?php
+
+if(isset($_POST['submit'])){
+
+    $amount = $_POST['amount']; //Amount to transact 
+    $phonenumber = $_POST['phone']; // Phone number paying
+    
+    $Account_no = 'COMRADE MARKET'; // Enter account number optional
+    $url = 'https://tinypesa.com/api/v1/express/initialize';
+    $data = array(
+        'amount' => $amount,
+        'msisdn' => $phonenumber,
+        'account_no'=>$Account_no
+    );
+    $headers = array(
+        'Content-Type: application/x-www-form-urlencoded',
+        'ApiKey: Me3s8tLM8vW' // Replace with your api key
+     );
+    $info = http_build_query($data);
+    
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS, $info);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER, $headers);
+    $resp = curl_exec($curl);
+    $msg_resp = json_decode($resp);
+    
+    
+    if ($msg_resp ->success == 'true') {
+        echo "<center><h5>WAIT FOR  STK POP UP🔥</h5></center>";
+      } else {
+        echo "Transaction Failed";
+       
+      }
+}
+?>
 <!doctype html>
 <html class="no-js" lang="zxx">
 
@@ -27,7 +65,15 @@
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
 <style type="text/css">
-    
+    @media only screen and (max-width: 700px) {
+  .website-logo{
+    height: 50px!important;
+    width: 40px!important;
+  }
+}
+html {
+  scroll-behavior: smooth!important;
+}
 </style>
 <body>
     <!--[if lte IE 9]>
@@ -71,8 +117,8 @@
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logooo.png" alt="" height="60px" width="60px" class="website-logo">
-                                    <h5 style="text-shadow: 1px 1px 1px #rebeccapurple;">Community Network</h5>
+                                    <img src="img/logooo.png" alt="" height="80px" width="60px" class="website-logo">
+                                    <h5 style="text-shadow: 1px 1px 1px #rebeccapurple; font-family: sans-serif;">Community Network</h5>
                                 </a>
                             </div>
                         </div>
@@ -84,22 +130,21 @@
                                         <li><a href="About.html">About</a></li>
                                         <li><a href="#">Join <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="#">blog</a></li>
-                                                <li><a href="#">single-blog</a></li>
+                                                <li><a href="#newsletter">Newsletter</a></li>
+                                                
                                             </ul>
                                         </li>
                                         <li><a href="#">Share your story <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="#">elements</a></li>
-                                                <li><a href="#">Cause</a></li>
+                                                <li><a href="./single-blog.html">share story</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="contact.html">Gallery</a></li>
+                                        <li><a href="gallery.html">Gallery</a></li>
                                     </ul>
                                 </nav>
                                 <div class="Appointment">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="#">Make a Donation</a>
+                                        <a data-scroll-nav='1' href="./donation.php">Make a Donation</a>
                                     </div>
                                 </div>
                             </div>
@@ -448,21 +493,23 @@
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-55">
                         <h3><span>Make a Donation</span></h3>
+                        <br>
+ 
                     </div>
                 </div>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <form action="#" class="donation_form">
+                    <form action="./home.php" method="POST" class="donation_form">
                         <div class="row align-items-center">
                             <div class="col-md-4">
                                 <div class="single_amount">
                                     <div class="input_field">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                              <span class="input-group-text" id="basic-addon1">$</span>
+                                              <span class="input-group-text" id="basic-addon1">Amount :</span>
                                             </div>
-                                            <input type="text" class="form-control" placeholder="40,200" aria-label="Username" aria-describedby="basic-addon1">
+                                            <input type="text" class="form-control"  aria-label="Username" name="amount"aria-describedby="basic-addon1" required>
                                           </div>
                                     </div>
                                 </div>
@@ -471,39 +518,31 @@
                                 <div class="single_amount">
                                    <div class="fixed_donat d-flex align-items-center justify-content-between">
                                        <div class="select_prise">
-                                           <h4>Select Amount:</h4>
+                                           <h4>Enter Phone:</h4>
                                        </div>
                                         <div class="single_doonate"> 
-                                            <input type="radio" id="blns_1" name="radio-group" checked>
-                                            <label for="blns_1">10</label>
+                                            <input type="text" id="blns_1" name="phone" checked style="border:none; border-bottom: 1px solid green; outline: none;" required>
                                         </div>
-                                        <div class="single_doonate"> 
-                                            <input type="radio" id="blns_2" name="radio-group" checked>
-                                            <label for="blns_2">30</label>
-                                        </div>
-                                        <div class="single_doonate"> 
-                                            <input type="radio" id="Other" name="radio-group" checked>
-                                            <label for="Other">Other</label>
-                                        </div>
+                                       
                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </form>
+                    
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
                     <div class="donate_now_btn text-center">
-                        <a href="#" class="boxed-btn4">Donate Now</a>
+                        <input  class="boxed-btn4" type="submit" name="submit" value="Donate with Mpesa">
                     </div>
                 </div>
-
+                </form>
             </div>
         </div>
     </div>
 <!--Newsletter area-->
-  <div data-scroll-index='1' class="make_donation_area section_padding">
+  <div data-scroll-index='1' id="newsletter" class="make_donation_area section_padding">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
