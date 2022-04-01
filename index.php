@@ -151,12 +151,44 @@
           height="122px"
           width="105px"
           class="logo-image"
-        />
+        data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
       </center>
       <center>
         <p class="tagline">🔗royalpatches</p>
       </center>
       <!--LOGO SECTION-->
+      <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+
+<div class="modal fade "  id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+     
+          <br>
+         
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+               <center><h5 class="text-align:center!important;">🔗</h5></center>
+       <center>
+        <br>
+           <center>        <p >@royalpatches</p>
+        </center>
+        <br>
+       
+
+         <img src="./images/code.png" height="150px" width="150px">
+       </center>
+       <br>
+       <br>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
       <!--articles-->
       <div class="landing">
