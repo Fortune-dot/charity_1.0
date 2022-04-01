@@ -26,7 +26,9 @@
     <link rel="stylesheet" href="css/style.css">
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
 </head>
-
+<style type="text/css">
+    
+</style>
 <body>
     <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
@@ -69,7 +71,7 @@
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
                                 <a href="index.html">
-                                    <img src="img/logooo.png" alt="" height="60px" width="60px">
+                                    <img src="img/logooo.png" alt="" height="60px" width="60px" class="website-logo">
                                     <h5 style="text-shadow: 1px 1px 1px #rebeccapurple;">Community Network</h5>
                                 </a>
                             </div>
@@ -500,7 +502,54 @@
             </div>
         </div>
     </div>
-
+<!--Newsletter area-->
+  <div data-scroll-index='1' class="make_donation_area section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-55">
+                        <h3><span>Join our Newsletter</span></h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form action="./subscribe.php" class="donation_form" method="POST">
+                        <div class="row align-items-center">
+                            <div class="col-md-4">
+                                <div class="single_amount">
+                                    <div class="input_field">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                              <button class="btn btn-sucess" type="submit" name="Submit" style="background:transparent;">Subscribe</button>
+                                            </div>
+                                       
+                                          </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-8">
+                                <div class="single_amount">
+                                   <div class="fixed_donat d-flex align-items-center justify-content-between">
+                                       <div class="select_prise">
+                                           <h4>Email</h4>
+                                       </div>
+                                        <div class="single_doonate"> 
+                                            <input type="email" id="blns_1" name="Email" checked style="border:none; border-bottom: 1px solid green; outline: none;">
+                                            
+                                        </div>
+                                        
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+   
+        </div>
+    </div>
+<!--#Newsletter area-->
     <!-- footer_start  -->
     <footer class="footer">
         <div class="footer_top">
