@@ -3,7 +3,7 @@
 ## CONFIG ##
 
 # LIST EMAIL ADDRESS
-$recipient = "royalpatches254@gmail.com";
+$recipient = "fortunelangat54@gmail.com";
 
 # SUBJECT (Subscribe/Remove)
 $subject = "Subscribe";
