@@ -116,7 +116,7 @@ html {
                     <div class="row align-items-center">
                         <div class="col-xl-3 col-lg-3">
                             <div class="logo">
-                                <a href="index.html">
+                                <a href="index.php">
                                     <img src="img/logooo.png" alt="" height="80px" width="60px" class="website-logo">
                                     <h5 style="text-shadow: 1px 1px 1px #rebeccapurple; font-family: sans-serif;">Community Network</h5>
                                 </a>
