@@ -123,7 +123,7 @@ html {
                             </div>
                         </div>
                         <div class="help_content">
-                            <h4>Collecting Fund</h4>
+                            <h4>Community Support</h4>
                             <p>Lorem ipsum, or lipsum as it is 
                                 sometimes known, is dummy 
                                 text used in laying out print.</p>

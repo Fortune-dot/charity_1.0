@@ -23,6 +23,31 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style type="text/css">
+       @media only screen and (max-width: 700px) {
+
+  .custom{
+    width: 100%!important;
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content: space-around;
+   }
+   .container{
+    width: 100%!important;
+    display: flex!important;
+   }
+   .mydiv{
+    width: 100%!important;
+    display: flex!important;
+   }
+   .img-placeholder{
+    width: 90px!important;
+    height: 90px!important;
+   }
+
+
+}
+
+
   .form-div { margin-top: 100px; border: 1px solid #e0e0e0; }
 #profileDisplay { display: block; height: 210px; width: 60%; margin: 0px auto; border-radius: 50%; }
 .img-placeholder {
@@ -56,8 +81,8 @@
     <br>
 
   <div class="container">
-    <div class="row">
-      <div class="col-4 offset-md-4 form-div">
+    <div class="row custom">
+      <div class="col-4 offset-md-4 form-div mydiv">
         <a href="profiles.php">View all Stories</a>
         <form action="story.php" method="post" enctype="multipart/form-data">
           <h2 class="text-center mb-3 mt-3">Create Story</h2>
