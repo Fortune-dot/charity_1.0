@@ -94,7 +94,7 @@ html {
                             <span>Get Started Today.</span>
                             <h3>Discover,</h3>
                             <p>Royal Patches,active community</p>
-                            <a href="About.html" class="boxed-btn3">Learn More
+                            <a href="#stories" class="boxed-btn3">Learn More
                             </a>
                         </div>
                     </div>
@@ -127,7 +127,7 @@ html {
                             <p>Lorem ipsum, or lipsum as it is 
                                 sometimes known, is dummy 
                                 text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+                            <a href="#stories" class="read_more">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -361,12 +361,12 @@ html {
     <!-- our_volunteer_area_end  -->
 
     <!-- news__area_start  -->
-    <div class="news__area section_padding">
+    <div class="news__area section_padding" id="stories">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section_title text-center mb-55">
-                        <h3><span>News & Updates</span></h3>
+                        <h3><span>Stories & Updates</span></h3>
                     </div>
                 </div>
             </div>

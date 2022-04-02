@@ -44,10 +44,10 @@
                                 <nav>
                                     <ul id="navigation">
                                         <li><a href="home.php">home</a></li>
-                                        <li><a href="About.html">About</a></li>
+                                        <li><a href="volunteer.php">Volunteer</a></li>
                                         <li><a href="#">Join <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="./join.php">Join us</a></li>
+                                                <li><a href="./sandbox.php">Join us</a></li>
                                                 <li><a href="#newsletter">Newsletter</a></li>
                                                 
                                             </ul>
@@ -63,7 +63,7 @@
                                 </nav>
                                 <div class="Appointment">
                                     <div class="book_btn d-none d-lg-block">
-                                        <a data-scroll-nav='1' href="./donation.php">Make a Donation</a>
+                                        <a  href="./donation.php">Make a Donation</a>
                                     </div>
                                 </div>
                             </div>

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Image Preview and Upload PHP</title>
+  <title> Story</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
   <link rel="stylesheet" href="main.css">
@@ -23,27 +23,22 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <style type="text/css">
-       @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
+  .container{
+    width: 100%!important;
+    display: flex!important;
+  }
+ .custom{
+  display: flex!important;
+  justify-content: center!important;
+  width: 80%!important;
+ }
+ .mydiv{
+  min-width:400px!important;
 
-  .custom{
-    width: 100%!important;
-    display: flex!important;
-    flex-direction: column!important;
-    justify-content: space-around;
-   }
-   .container{
-    width: 100%!important;
-    display: flex!important;
-   }
-   .mydiv{
-    width: 100%!important;
-    display: flex!important;
-   }
-   .img-placeholder{
-    width: 90px!important;
-    height: 90px!important;
-   }
+ }
 
+        
 
 }
 
@@ -83,7 +78,7 @@
   <div class="container">
     <div class="row custom">
       <div class="col-4 offset-md-4 form-div mydiv">
-        <a href="profiles.php">View all Stories</a>
+        <a href="profiles.php" style="color:green;">View all Stories</a>
         <form action="story.php" method="post" enctype="multipart/form-data">
           <h2 class="text-center mb-3 mt-3">Create Story</h2>
           <?php if (!empty($msg)): ?>
@@ -94,9 +89,9 @@
           <div class="form-group text-center" style="position: relative;" >
             <span class="img-div">
               <div class="text-center img-placeholder"  onClick="triggerClick()">
-                <h4>Update image</h4>
+                <h4>Upload image</h4>
               </div>
-              <img src="images/avatar.jpg" onClick="triggerClick()" id="profileDisplay">
+              <img src="images/avatar.jpg" onClick="triggerClick()" id="profileDisplay" class="img-fluid">
             </span>
             <input type="file" name="profileImage" onChange="displayImage(this)" id="profileImage" class="form-control" style="display: none;">
             <label>Profile Image</label>
@@ -106,7 +101,7 @@
             <textarea name="bio" class="form-control"></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" name="save_profile" class="btn btn-primary btn-block">Post Story</button>
+            <button type="submit" name="save_profile" class="btn btn-success btn-block">Post Story</button>
           </div>
         </form>
       </div>
