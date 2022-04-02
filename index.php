@@ -363,7 +363,7 @@
       </a>
 
       <br />
-      <a href="./sandbox.php" style="text-decoration: none !important">
+      <a href="./story.php" style="text-decoration: none !important">
         <div id="container">
           <div id="background">
             <center>
