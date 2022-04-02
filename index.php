@@ -123,7 +123,7 @@
                 </center>
                 <center>
                   <a
-                    href="./events.html"
+                    href="./galley.php"
                     style="text-decoration: none !important"
                   >
                     <li class="list-group-item">Events</li>
