@@ -10,7 +10,7 @@
                                     <img src="img/footer_logo.png" alt="" height="60px" width="60px">
                                 </a>
                             </div>
-                            <p class="address_text">Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit, sed do <br> eiusmod tempor incididunt ut labore.
+                            <p class="address_text">Welcome to royalpatches <br> we are a community dedicated to highlight issues<br> support and empower people with vitiligo
                             </p>
                             <div class="socail_links">
                                 <ul>
@@ -45,12 +45,10 @@
                                 Services
                             </h3>
                             <ul class="links">
-                                <li><a href="#">Donate</a></li>
-                                <li><a href="#">Sponsor</a></li>
-                                <li><a href="#">Fundraise</a></li>
-                                <li><a href="#">Volunteer</a></li>
-                                <li><a href="#">Partner</a></li>
-                                <li><a href="#">Jobs</a></li>
+                                <li><a href="./donation.php">Donate</a></li>
+                                <li><a href="./donation.php">Sponsor</a></li>
+                                <li><a href="./donation.php">Fundraise</a></li>
+                                <li><a href="./volunteer.php">Volunteer</a></li>
                             </ul>
                         </div>
                     </div>
@@ -60,10 +58,8 @@
                                 Contacts
                             </h3>
                             <div class="contacts">
-                                <p>+2(305) 587-3407 <br>
-                                    info@loveuscharity.com <br>
-                                    Flat 20, Reynolds Neck, North
-                                    Helenaville, FV77 8WS
+                                <p>+254706224450 <br>
+                                    royalpatches254@gmail.com <br>
                                 </p>
                             </div>
                         </div>
@@ -84,7 +80,7 @@
                                         <a href="#">
                                             <h4>Events</h4>
                                         </a>
-                                        <span>Jun 12, 2019</span>
+                                        <span>Jan 12, 2022</span>
                                     </div>
                                 </li>
                                 <li>
@@ -97,7 +93,7 @@
                                         <a href="#">
                                             <h4>Programs</h4>
                                         </a>
-                                        <span>Jun 12, 2019</span>
+                                        <span>Jan 12, 2022</span>
                                     </div>
                                 </li>
                             </ul>

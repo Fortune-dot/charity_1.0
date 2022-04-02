@@ -124,10 +124,8 @@ html {
                         </div>
                         <div class="help_content">
                             <h4>Community Support</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#stories" class="read_more">Read More</a>
+                            <p>We manage to run our programs and events with the help of the community.</p>
+                            <a href="./donation.php" class="read_more">Support</a>
                         </div>
                     </div>
                 </div>
@@ -140,10 +138,8 @@ html {
                         </div>
                         <div class="help_content">
                             <h4>Events</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+                            <p>We organise events to raise awareness and enable people with vitiligo appreciate and celebrate themselves as they are.</p>
+                            <a href="./gallery.php" class="read_more">gallery</a>
                         </div>
                     </div>
                 </div>
@@ -156,10 +152,8 @@ html {
                         </div>
                         <div class="help_content">
                             <h4>Friendly Volunteer</h4>
-                            <p>Lorem ipsum, or lipsum as it is 
-                                sometimes known, is dummy 
-                                text used in laying out print.</p>
-                            <a href="#" class="read_more">Read More</a>
+                            <p>Become a vounteer and become an active member in the community all you need to do is to take the step and register by clicking the link below.</p>
+                            <a href="./volunteer.php" class="read_more">volunteer</a>
                         </div>
                     </div>
                 </div>
@@ -183,15 +177,9 @@ html {
                             <h3> <span>Watch Our Latest  </span><br>
                                 Activities</h3>
                         </div>
-                        <p class="para_1">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation.</p class="para_1">
-                        <p class="para_2">Lorem ipsum dolor sit amet, consectetur adipisicing elit sed do 
-                            eiusmod tempor incididunt  ut labore dolore magna aliqua. 
-                            enim minim veniam, quis nostrud exercitation. tempor 
-                            incididunt  ut labore dolore magna aliqua. enim minim 
-                            veniam, quis nostrud exercitation.</p>
-                        <a href="#" data-scroll-nav='1' class="boxed-btn4">Donate Now</a>
+                        <p class="para_1">Checkout some of our awesome success stories and generally experiences of others living with vitiligo who have found joy in everyday life</p class="para_1">
+                        <p class="para_2">The community is vibrant and filled with love,help us keep the movement going by giving a donation today!</p>
+                        <a href="./donation.php"  class="boxed-btn4">Donate Now</a>
                     </div>
                 </div>
             </div>
@@ -213,8 +201,8 @@ html {
                                 <i class="flaticon-calendar"></i>
                             </div>
                             <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
+                                <h3 class="counter">1,120</h3>
+                                <p>Members</p>
                             </div>
                         </div>
                     </div>
@@ -235,8 +223,8 @@ html {
                                 <i class="flaticon-in-love"></i>
                             </div>
                             <div class="events">
-                                <h3 class="counter">120</h3>
-                                <p>Finished Event</p>
+                                <h3 class="counter">20</h3>
+                                <p>Upcoming Events</p>
                             </div>
                         </div>
                     </div>
@@ -382,10 +370,7 @@ html {
                                 <a href="single-blog.html">
                                     <h3>Fashion event</h3>
                                 </a>
-                                <p>The passage experienced a 
-                                    surge in popularity during the 
-                                    1960s when used it on their  
-                                    sheets, and again.</p>
+                                <p>This was a fashion event organised to celebrate those wwho have great achievements in the field</p>
                                 <a class="read_more" href="single-blog.html">Read More</a>
                             </div>
                         </div>
