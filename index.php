@@ -300,7 +300,7 @@
         <h2 style="font-size: 18px">YOU ARE A STRONG YOU ARE A WARRIOR YOU ARE LIT</h2>
       </center>
       <br />
-  <a href="./join.php">
+  <a href="./sandbox.php">
           <div class="banner home-banner">
         <!---banner design image-->
       </div>
@@ -363,7 +363,7 @@
       </a>
 
       <br />
-      <a href="./story.php" style="text-decoration: none !important">
+      <a href="./sandbox.php" style="text-decoration: none !important">
         <div id="container">
           <div id="background">
             <center>
