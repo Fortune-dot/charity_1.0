@@ -300,10 +300,12 @@
         <h2 style="font-size: 18px">YOU ARE A STRONG YOU ARE A WARRIOR YOU ARE LIT</h2>
       </center>
       <br />
-  
-      <div class="banner home-banner">
+  <a href="./join.php">
+          <div class="banner home-banner">
         <!---banner design image-->
       </div>
+  </a>
+
       <br />
 
       <a href="./support.html" style="text-decoration: none !important">
@@ -325,7 +327,7 @@
 
       <br />
 
-      <a href="./events.html" style="text-decoration: none !important">
+      <a href="./gallery.php" style="text-decoration: none !important">
         <div id="container">
           <div id="background">
             <center>
