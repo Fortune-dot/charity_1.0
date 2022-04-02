@@ -1,91 +1,115 @@
-<!doctype html>
-<html class="no-js" lang="zxx">
 
-<head>
+ <!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Charifit</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
-    <!-- Place favicon.ico in the root directory -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <?php  include('links.php'); ?>
 
-    <!-- CSS here -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/themify-icons.css">
-    <link rel="stylesheet" href="css/nice-select.css">
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/gijgo.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/slicknav.css">
-    <link rel="stylesheet" href="css/style.css">
-    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-</head>
-<style type="text/css">
-    @media only screen and (max-width: 700px) {
-  .website-logo{
-    height: 50px!important;
-    width: 40px!important;
-  }
-}
-html {
-  scroll-behavior: smooth!important;
-}
+    <title>Contact Us</title>
+  </head>
+  <body>
+<?php include('nav.php'); ?>
 
-*{
-    font-family: sans-serif;
-}
-</style>
-<body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
+<?php
+    if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $phone = $_POST['phone'];        
+        $desc = $_POST['desc'];
+        
+      
+        //Get Heroku ClearDB connection information
+      $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+      $cleardb_server = $cleardb_url["host"];
+      $cleardb_username = $cleardb_url["user"];
+      $cleardb_password = $cleardb_url["pass"];
+      $cleardb_db = substr($cleardb_url["path"],1);
+      $active_group = 'default';
+      $query_builder = TRUE;
+      // Connect to DB
+      $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $cleardb_db);
+      // Die if connection was not successful
+      if (!$conn){
+          die("Sorry we failed to connect: ". mysqli_connect_error());
+      }
+      else{ 
+        // Submit these to a database
+        // Sql query to be executed 
+        $sql = "INSERT INTO volunt (`name`, `phone`,`email`, `concern`) VALUES ('$name','$phone', '$email', '$desc')";
+        $result = mysqli_query($conn, $sql);
+        ?>
 
 
-  <?php  include('./nav.php'); ?>
-<!--Volunteer Section-->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-<form>
-  <div class="form-group">
-    <label for="exampleFormControlInput1">First name</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="john doe" required>
-  </div>
+ 
+       
+<br><br><br><br><br><br>
+  <?php 
+   if($result){
+          echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+          <strong>Success!</strong> Your entry has been submitted successfully!
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>';
+        }
+        else{
+           echo "The record was not inserted successfully because of this error ---> ". mysqli_error($conn);
+            echo '<div class="alert alert-danger alert-dismissible fade show" role="alert">
+          <strong>Error!</strong> We are facing some technical issue and your entry ws not submitted successfully! We regret the inconvinience caused!
+          <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>';
+        }
+
+      }
+
+    }
+
+    
+?>
+<br><br><br><br><br><br>
+<div class="container mt-3">
+
+
+<h1>Become a Volunteer 💖</h1>
+
+    <form action="sandbox.php" method="post">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" name="name" class="form-control" id="name" aria-describedby="emailHelp">
+    </div>
 
     <div class="form-group">
-    <label for="exampleFormControlInput1">Phone Number</label>
-    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="+254 **** **** " required>
-  </div>
-       <div class="form-group">
-    <label for="exampleFormControlInput1">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com" required>
-  </div>
+        <label for="phone">Phone Number</label>
+        <input type="text" name="phone" class="form-control" id="phone" aria-describedby="emailHelp"> 
+    </div> 
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp"> 
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    </div>
 
 
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">How would you like to volunteer?</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
-    <button type="submit" class="btn btn-success">Volunteer</button>
-</form>
+    <div class="form-group">
+        <label for="desc">How would you like to Volunteer?</label>
+        <textarea class="form-control" name="desc" id="desc" cols="30" rows="10"></textarea> 
+    </div>
+    
+    <button type="submit" class="btn btn-success">Become a volunteer</button>
+    </form>
 </div>
-<br>
-<br>
-<br>
-<br>
-<!--Volunteer Section-->
-<?php  include('./footer.php'); ?>    
+<br><br><br>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <?php include('footer.php')  ?>
