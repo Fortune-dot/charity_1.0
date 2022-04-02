@@ -58,7 +58,7 @@
                                                 <li><a href="./profiles.php">View stories</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="gallery.html">Gallery</a></li>
+                                        <li><a href="gallery.php">Gallery</a></li>
                                     </ul>
                                 </nav>
                                 <div class="Appointment">

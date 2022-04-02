@@ -18,7 +18,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Image Preview and Upload</title>
+  <title>Stories</title>
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css" />
   <?php include('./links.php');?>
