@@ -361,6 +361,22 @@
       </a>
 
       <br />
+      <a href="./story.php" style="text-decoration: none !important">
+        <div id="container">
+          <div id="background">
+            <center>
+              <h1 class="emoji">😎</h1>
+            </center>
+          </div>
+          <br />
+          <br />
+          <center>
+            <p style="font-size: 16px; color: white; font-weight: bold">
+              Share your story
+            </p>
+          </center>
+        </div>
+      </a>
 
    
       
