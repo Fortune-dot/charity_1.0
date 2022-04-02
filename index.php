@@ -107,7 +107,7 @@
               <ul>
                 <center>
                   <a
-                    href="./index.html"
+                    href="./index.php"
                     style="text-decoration: underline !important"
                   >
                     <li class="list-group-item">Home</li>
