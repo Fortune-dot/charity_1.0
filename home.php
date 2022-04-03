@@ -278,10 +278,7 @@ html {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="info_inner">
-                                <h4>Sakil khan</h4>
-                                <p>Donner</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -307,10 +304,7 @@ html {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="info_inner">
-                                <h4>Emran Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -336,10 +330,7 @@ html {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="info_inner">
-                                <h4>Sabbir Ahmed</h4>
-                                <p>Volunteer</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -370,8 +361,8 @@ html {
                                 <a href="single-blog.html">
                                     <h3>Fashion event</h3>
                                 </a>
-                                <p>This was a fashion event organised to celebrate those wwho have great achievements in the field</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
+                                <p>This was a fashion event organised to celebrate those who have great achievements in the field</p>
+            
                             </div>
                         </div>
                         <div class="single__blog d-flex align-items-center">
@@ -383,11 +374,8 @@ html {
                                 <a href="single-blog.html">
                                     <h3>Community event</h3>
                                 </a>
-                                <p>The passage experienced a 
-                                    surge in popularity during the 
-                                    1960s when used it on their  
-                                    sheets, and again.</p>
-                                <a class="read_more" href="single-blog.html">Read More</a>
+                                <p>At a tree planting site.</p>
+                                
                             </div>
                         </div>
                     </div>

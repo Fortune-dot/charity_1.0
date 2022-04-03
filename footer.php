@@ -40,17 +40,7 @@
                         </div>
                     </div>
                     <div class="col-xl-2 col-md-6 col-lg-2">
-                        <div class="footer_widget">
-                            <h3 class="footer_title">
-                                Services
-                            </h3>
-                            <ul class="links">
-                                <li><a href="./donation.php">Donate</a></li>
-                                <li><a href="./donation.php">Sponsor</a></li>
-                                <li><a href="./donation.php">Fundraise</a></li>
-                                <li><a href="./volunteer.php">Volunteer</a></li>
-                            </ul>
-                        </div>
+
                     </div>
                     <div class="col-xl-3 col-md-6 col-lg-3">
                         <div class="footer_widget">
