@@ -194,7 +194,7 @@
       <div class="landing">
         <div class="cocoon">
           <p>
-            Royal Patches Foundation is a group creating awareness
+            Royal Patches is a group creating awareness
             on Vitiligo through the Entertainment Industry,
             Art,Music, Modelling,Acting,Dancing and Events in General!
           </p>
