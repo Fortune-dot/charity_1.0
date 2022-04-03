@@ -177,7 +177,7 @@ html {
                             <h3> <span>Watch Our Latest  </span><br>
                                 Activities</h3>
                         </div>
-                        <p class="para_1">Checkout some of our awesome success stories and generally experiences of others living with vitiligo who have found joy in everyday life</p class="para_1">
+                        <p class="para_1">Checkout some of our awesome success stories and general experiences of others living with vitiligo who have found joy in everyday life</p class="para_1">
                         <p class="para_2">The community is vibrant and filled with love,help us keep the movement going by giving a donation today!</p>
                         <a href="./donation.php"  class="boxed-btn4">Donate Now</a>
                     </div>
