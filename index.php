@@ -375,7 +375,7 @@
             Art,Music, Modelling,Acting,Dancing and Events in General!
           </p>
           <br />
-          <p style="color:white;">
+          <p >
             We curate programs, workshops, events and campaigns to connect with
             the millions of people to integrate vitiligo culture into the community.
           </p>
@@ -473,7 +473,7 @@
       <br />
       <br />
       <center>
-        <h2 style="font-size: 16px; color:white;">WE ARE WHOM WE ARE IN DIFFERENT SHADES OF US</h2>
+        <h2 style="font-size: 16px; ">WE ARE WHOM WE ARE IN DIFFERENT SHADES OF US</h2>
       </center>
       <br />
   <a href="./sandbox.php">
