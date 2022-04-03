@@ -9,6 +9,7 @@
     <title>Home</title>
   </head>
   <!-- CSS only -->
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
   <link
     href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
     rel="stylesheet"
@@ -53,19 +54,203 @@
           <!--add svg-->
 
           <!--share svg-->
-          <svg
+          <span data-bs-toggle="modal" data-bs-target="#myModel">
+           <svg
+
             xmlns="http://www.w3.org/2000/svg"
             width="16"
             height="16"
             fill="currentColor"
             class="bi bi-share"
             viewBox="0 0 16 16"
-          >
+           >
             <path
               d="M13.5 1a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5zm-8.5 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm11 5.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3z"
             />
+
           </svg>
+          </span>
+
           <!--share svg-->
+<!----------------------------Share Modal----------------------------------------->
+      <div class="modal fade" id="myModel" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <style type="text/css">
+            #shareBtn {
+                letter-spacing: 2px;
+                font-weight: 600;
+                box-shadow: none;
+                background-color: #eee;
+                color: #7d2ae8;
+                border: none
+            }
+
+            .modal {
+                top: 20%
+            }
+
+            .btn-close {
+                box-shadow: none;
+                border: none;
+                outline: none
+            }
+
+            .modal-body .icons {
+                margin: 15px 0px 20px 0px
+            }
+
+            .modal-body .icons a {
+                text-decoration: none;
+                border: 1px solid transparent;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-right: 20px;
+                transition: all 0.3s ease-in-out
+            }
+
+            .modal-body .icons a:nth-child(1) {
+                color: #1877F2;
+                border-color: #B7D4FB
+            }
+
+            .modal-body .icons a:nth-child(1):hover {
+                background-color: #1877F2;
+                color: #fff
+            }
+
+            .modal-body .icons a:nth-child(2) {
+                color: #46C1F6;
+                border-color: #b6e7fc
+            }
+
+            .modal-body .icons a:nth-child(2):hover {
+                background-color: #46C1F6;
+                color: #fff
+            }
+
+            .modal-body .icons a:nth-child(3) {
+                color: #e1306c;
+                border-color: #f5bccf
+            }
+
+            .modal-body .icons a:nth-child(3):hover {
+                background-color: #e1306c;
+                color: #fff
+            }
+
+            .modal-body .icons a:nth-child(4) {
+                color: #25d366;
+                border-color: #bef4d2
+            }
+
+            .modal-body .icons a:nth-child(4):hover {
+                background-color: #25d366;
+                color: #fff
+            }
+
+            .modal-body .icons a:nth-child(5) {
+                color: #0088cc;
+                border-color: #b3e6ff
+            }
+
+            .modal-body .icons a:nth-child(5):hover {
+                background-color: #0088cc;
+                color: #fff
+            }
+
+            .modal-body .icons a:hover {
+                border-color: transparent
+            }
+
+            .modal-body .icons a span {
+                transition: all 0.09s ease-in-out
+            }
+
+            .modal-body .icons a:hover span {
+                transform: scaleX(1.1)
+            }
+
+            .modal-body .field {
+                margin: 15px 0px -5px 0px;
+                height: 45px;
+                border: 1px solid #dfdfdf;
+                border-radius: 5px;
+                padding: 0 5px
+            }
+
+            .modal-body .field.active {
+                border-color: #7d2ae8
+            }
+
+            .field span {
+                width: 50px;
+                font-size: 1.1rem
+            }
+
+            .field.active span {
+                color: #7d2ae8
+            }
+
+            .field input {
+                border: none;
+                outline: none;
+                font-size: 0.89rem;
+                width: 100%;
+                height: 100%
+            }
+
+            .field button {
+                padding: 5px 16px;
+                color: #fff;
+                background: #7d2ae8;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                font-weight: 500
+            }
+
+            @media (max-width: 330px) {
+                .modal-body .icons a {
+                    margin-right: 15px;
+                    width: 35px;
+                    height: 35px
+                }
+            }
+        </style>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <p>Share this link via</p>
+                <div class="d-flex align-items-center icons"> <a href="#" class="fs-5 d-flex align-items-center justify-content-center"> <span class="fab fa-facebook-f"></span> </a> <a href="#" class="fs-5 d-flex align-items-center justify-content-center"> <span class="fab fa-twitter"></span> </a> <a href="#" class="fs-5 d-flex align-items-center justify-content-center"> <span class="fab fa-instagram"></span> </a> <a href="#" class="fs-5 d-flex align-items-center justify-content-center"> <span class="fab fa-whatsapp"></span> </a> <a href="#" class="fs-5 d-flex align-items-center justify-content-center"> <span class="fab fa-telegram-plane"></span> </a> </div>
+                <p>Or copy link</p>
+                <div class="field d-flex align-items-center justify-content-between"> <span class="fas fa-link text-center"></span> <input type="text" value="royalpatches.com"> <button>Copy</button> </div>
+            </div>
+          </div>
+        </div>
+        <script type="text/javascript">
+          document.addEventListener('DOMContentLoaded',function(e){
+          let field = document.querySelector('.field');
+          let input = document.querySelector('input');
+          let copyBtn = document.querySelector('.field button');
+
+          copyBtn.onclick = () =>{
+          input.select();
+          if(document.execCommand("copy")){
+          field.classList.add('active');
+          copyBtn.innerText = 'Copied';
+          setTimeout(()=>{
+          field.classList.remove('active');
+          copyBtn.innerText = 'Copy';
+          },3500)
+          }
+          }
+          })
+        </script>
+      </div>
+<!------------------------------#share modal------------------------------------------->
+
         </div>
         <div class="holder2">
           <!--HAMBURGER SVG-->
@@ -163,7 +348,8 @@
         <p class="tagline">🔗royalpatches</p>
       </center>
       <!--LOGO SECTION-->
-      <!-- Button trigger modal -->
+
+
 
 
 <!-- Modal -->
@@ -393,5 +579,6 @@
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </body>
 </html>
