@@ -19,6 +19,12 @@
       transform: scale(1.2);
       font-weight: bold;
     }
+    body{
+      background-image: url(./img/semi.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   </style>
 
   <body>
