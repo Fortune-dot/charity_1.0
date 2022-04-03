@@ -16,11 +16,12 @@ body {
   
 }
 .container {
-  background-image: url(./images/semi2.png);
+  /*background-image: url(./images/semi2.png);
   opacity: 1 !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  */
   width: 534px !important;
   /*border: 1px solid black;*/
   border: none;
