@@ -5,26 +5,22 @@
   font-family: sans-serif;
 }
 body {
-    background-image: url(./img/back.jpeg)!important;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #c486eb!important;
   width: 100%;
   display: flex;
-  justify-content: center;
-
-
-  
+  justify-content: center; 
 }
 .container {
-  /*background-image: url(./images/semi2.png);
+ background-image: url(./images/semi2.png);
   opacity: 1 !important;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-color: transparent!important;
   */
   width: 534px !important;
- border: 1px solid black;
-  /*border: none;*/
+ /*border: 1px solid black;*/
+  border: none;
 }
 .nav {
   padding: 10px;

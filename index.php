@@ -21,11 +21,9 @@
       font-weight: bold;
     }
     body{
-      background-image: url(./img/semi.png);
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      background-color: #c486eb!important;
     }
+
   </style>
 
   <body>
