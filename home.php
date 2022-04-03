@@ -463,7 +463,7 @@ html {
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-6">
-                    <form action="./subscribe.php" class="donation_form" method="POST">
+                    <form action="https://formspree.io/f/xlezwazv" class="donation_form" method="POST">
                         <div class="row align-items-center">
                             <div class="col-md-4">
                                 <div class="single_amount">

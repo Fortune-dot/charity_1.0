@@ -48,7 +48,7 @@
                                         <li><a href="#">Join <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
                                                 <li><a href="./sandbox.php">Join us</a></li>
-                                                <li><a href="#newsletter">Newsletter</a></li>
+                                                <li><a href="./newsletter.php">Newsletter</a></li>
                                                 
                                             </ul>
                                         </li>
