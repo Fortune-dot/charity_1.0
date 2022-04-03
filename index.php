@@ -377,8 +377,7 @@
           </p>
           <br />
           <p >
-            We curate programs, workshops, events and campaigns to connect with
-            the millions of people to integrate vitiligo culture into the community.
+            We integrate Vitiligo culture into the community in order to enhance diversity and inclusion.
           </p>
         </div>
       </div>
