@@ -18,7 +18,7 @@ body {
   background-position: center;
   background-color: transparent!important;
   */
-  width: 534px !important;
+  max-width: 534px !important;
  /*border: 1px solid black;*/
   border: none;
 }
