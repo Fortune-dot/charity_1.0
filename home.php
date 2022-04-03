@@ -358,9 +358,9 @@ html {
                             </div>
                             <div class="newsinfo">
                                 <span>July 18, 2019</span>
-                                <a href="single-blog.html">
+                              
                                     <h3>Fashion event</h3>
-                                </a>
+                               
                                 <p>This was a fashion event organised to celebrate those who have great achievements in the field</p>
             
                             </div>
@@ -371,9 +371,9 @@ html {
                             </div>
                             <div class="newsinfo">
                                 <span>July 18, 2019</span>
-                                <a href="single-blog.html">
+                                
                                     <h3>Community event</h3>
-                                </a>
+                               
                                 <p>At a tree planting site.</p>
                                 
                             </div>
