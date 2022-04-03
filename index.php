@@ -23,6 +23,9 @@
     body{
       background-color: #c486eb!important;
     }
+    .container{
+      max-width: 534px!important;
+    }
 
   </style>
 
