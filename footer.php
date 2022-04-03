@@ -10,7 +10,7 @@
                                     <img src="img/footer_logo.png" alt="" height="60px" width="60px">
                                 </a>
                             </div>
-                            <p class="address_text">Welcome to royalpatches <br> we are a community dedicated to highlight issues<br> support and empower people with vitiligo
+                            <p class="address_text">Welcome to royal patches community where we highlight issues,<br> support and foster empowerment of people living with vitiligo
                             </p>
                             <div class="socail_links">
                                 <ul>
