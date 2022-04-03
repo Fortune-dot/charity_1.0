@@ -54,8 +54,8 @@
                                         </li>
                                         <li><a href="#">Share your story <i class="ti-angle-down"></i></a>
                                             <ul class="submenu">
-                                                <li><a href="./story.php">share story</a></li>
-                                                <li><a href="./profiles.php">View stories</a></li>
+                                                <li><a href="./story.php">Our stories</a></li>
+                                                <li><a href="#">Coming soon</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="gallery.php">Gallery</a></li>

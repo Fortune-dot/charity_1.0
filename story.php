@@ -91,7 +91,7 @@
               <div class="text-center img-placeholder"  onClick="triggerClick()">
                 <h4>Upload image</h4>
               </div>
-              <img src="images/avatar.jpg" onClick="triggerClick()" id="profileDisplay" class="img-fluid">
+              <img src="images/avatar.png" onClick="triggerClick()" id="profileDisplay" class="img-fluid">
             </span>
             <input type="file" name="profileImage" onChange="displayImage(this)" id="profileImage" class="form-control" style="display: none;">
             <label>Profile Image</label>
